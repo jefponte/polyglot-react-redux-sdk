@@ -17,6 +17,14 @@ export const setDefaultPhrases = (defaultPhrases) => (
     })
   }
 )
+export const setPhrases = (phrases) => (
+  (dispatch) => {
+    dispatch({
+      type: actionTypes.SET_PHRASES,
+      payload: { phrases },
+    })
+  }
+)
 
 export const fetchPhrases = (url, defaultPhrases) => (dispatch) => {
   dispatch({ type: actionTypes.FETCH_PHRASES })
