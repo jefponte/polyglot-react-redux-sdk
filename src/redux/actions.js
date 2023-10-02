@@ -27,6 +27,7 @@ export const setPhrases = (phrases) => (
 )
 
 export const fetchPhrases = (url, defaultPhrases) => (dispatch) => {
+  console.log(url);
   dispatch({ type: actionTypes.FETCH_PHRASES })
 
 
